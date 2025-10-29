@@ -68,6 +68,7 @@ plt.xlabel("Usuarios")
 plt.ylabel("Clics Totales")
 plt.title("Clics por Usuario en Ventanas de 1 Minuto")
 plt.show()
+![Gráfico de clics](/grafico-clics.png)
 
 Interpretación Analítica
 
