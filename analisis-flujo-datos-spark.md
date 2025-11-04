@@ -620,9 +620,18 @@ clicks_per_user.<span class="function">show</span>()
                 </div>
             </div>
         </div>
-    <div>    
-    ![Gráfico de clics](/grafico-clics.png)
+    <div class="content-section">
+    <h2 class="section-title">
+        <div class="icon-circle">📈</div>
+        Visualización de Resultados
+    </h2>
+
+    <div style="text-align: center; margin: 40px 0;">
+        <img src="grafico-clics.png" alt="Gráfico de clics" width="700">
+        <p style="color: #0f9b0f; font-weight: bold;">Figura: Gráfico de clics</p>
     </div>
+</div>
+
 
         <div class="content-section">
             <h2 class="section-title">
