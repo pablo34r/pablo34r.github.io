@@ -150,28 +150,73 @@ Los usuarios con <strong>poca actividad</strong> pueden representar:
 
 ### **Arquitectura del Proyecto**
 
-<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 30px; border-radius: 15px; color: white; margin: 30px 0;">
+<div class="workflow-container">
+  <div class="workflow-card">
+    <h3>Google Colab + PySpark</h3>
+    <p>Procesamiento y Visualización</p>
+  </div>
 
-```
-┌─────────────────────────────────────────┐
-│   Google Colab + PySpark                │
-│   Procesamiento y Visualización         │
-└───────────────┬─────────────────────────┘
-                │
-                ▼
-┌─────────────────────────────────────────┐
-│   Jekyll                                 │
-│   Generación del Blog Estático          │
-└───────────────┬─────────────────────────┘
-                │
-                ▼
-┌─────────────────────────────────────────┐
-│   GitHub Pages                           │
-│   Alojamiento en la Nube (Gratuito)     │
-└─────────────────────────────────────────┘
-```
+  <div class="arrow">▼</div>
 
+  <div class="workflow-card">
+    <h3>Jekyll</h3>
+    <p>Generación del Blog Estático</p>
+  </div>
+
+  <div class="arrow">▼</div>
+
+  <div class="workflow-card">
+    <h3>GitHub Pages</h3>
+    <p>Alojamiento en la Nube (Gratuito)</p>
+  </div>
 </div>
+
+<style>
+.workflow-container {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 400px;
+  margin: 40px auto;
+  font-family: "Segoe UI", sans-serif;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.workflow-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 15px 0;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.workflow-card:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateY(-3px);
+}
+
+.workflow-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.workflow-card p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  margin: 5px 0;
+  opacity: 0.8;
+}
+</style>
+
 
 ### **Pasos de Despliegue**
 
