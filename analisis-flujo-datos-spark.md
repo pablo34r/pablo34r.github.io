@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0f9b0f 0%, #00c853 100%);
             color: #333;
             line-height: 1.6;
         }
@@ -43,7 +43,7 @@
 
         .particle {
             position: absolute;
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.3);
             border-radius: 50%;
             animation: float 6s infinite ease-in-out;
         }
@@ -91,7 +91,7 @@
 
         .section-title {
             font-size: 2.5em;
-            color: #667eea;
+            color: #0f9b0f;
             margin-bottom: 30px;
             display: flex;
             align-items: center;
@@ -101,22 +101,22 @@
         .icon-circle {
             width: 60px;
             height: 60px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #0f9b0f, #00c853);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 1.8em;
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 5px 15px rgba(15, 155, 15, 0.4);
         }
 
         .highlight-box {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0f9b0f 0%, #00c853 100%);
             padding: 40px;
             border-radius: 20px;
             color: white;
             margin: 30px 0;
-            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 15px 40px rgba(15, 155, 15, 0.4);
             position: relative;
             overflow: hidden;
         }
@@ -128,7 +128,7 @@
             right: -50%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
             animation: pulse 4s infinite;
         }
 
@@ -178,7 +178,7 @@
         }
 
         .data-table thead {
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #0f9b0f, #00c853);
             color: white;
         }
 
@@ -192,17 +192,17 @@
         }
 
         .data-table tbody tr:nth-child(even) {
-            background: #f8f9fa;
+            background: #f1f8f4;
         }
 
         .data-table tbody tr:hover {
-            background: #e3e7ff;
+            background: #c8e6c9;
             transform: scale(1.02);
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
         .code-block {
-            background: #1e1e1e;
+            background: #1a1a1a;
             color: #d4d4d4;
             padding: 25px;
             border-radius: 15px;
@@ -210,6 +210,7 @@
             overflow-x: auto;
             position: relative;
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border-left: 4px solid #00c853;
         }
 
         .code-block::before {
@@ -218,7 +219,7 @@
             top: 10px;
             right: 20px;
             font-size: 1.5em;
-            color: #667eea;
+            color: #00c853;
             opacity: 0.3;
         }
 
@@ -227,10 +228,10 @@
             font-size: 1em;
         }
 
-        .keyword { color: #569cd6; }
-        .string { color: #ce9178; }
-        .function { color: #dcdcaa; }
-        .comment { color: #6a9955; }
+        .keyword { color: #4fc3f7; }
+        .string { color: #a5d6a7; }
+        .function { color: #81c784; }
+        .comment { color: #66bb6a; }
 
         .info-cards {
             display: grid;
@@ -257,7 +258,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, transparent 0%, rgba(102, 126, 234, 0.05) 100%);
+            background: linear-gradient(135deg, transparent 0%, rgba(0, 200, 83, 0.05) 100%);
             opacity: 0;
             transition: opacity 0.3s ease;
         }
@@ -271,8 +272,15 @@
             box-shadow: 0 20px 50px rgba(0,0,0,0.2);
         }
 
-        .info-card.active { border-left-color: #ffc107; }
-        .info-card.passive { border-left-color: #17a2b8; }
+        .info-card.active { 
+            border-left-color: #00c853;
+            background: linear-gradient(135deg, #f1f8f4 0%, white 100%);
+        }
+        
+        .info-card.passive { 
+            border-left-color: #4fc3f7;
+            background: linear-gradient(135deg, #e3f2fd 0%, white 100%);
+        }
 
         .info-card h3 {
             font-size: 1.8em;
@@ -280,6 +288,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            color: #0f9b0f;
         }
 
         .workflow {
@@ -289,13 +298,13 @@
             gap: 20px;
             margin: 50px 0;
             padding: 50px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0f9b0f 0%, #00c853 100%);
             border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 20px 60px rgba(15, 155, 15, 0.4);
         }
 
         .workflow-step {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.98);
             padding: 30px 50px;
             border-radius: 15px;
             width: 100%;
@@ -304,21 +313,23 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
             transition: all 0.3s ease;
             position: relative;
+            border: 2px solid rgba(255, 255, 255, 0.3);
         }
 
         .workflow-step:hover {
             transform: scale(1.05);
             background: white;
+            border-color: white;
         }
 
         .workflow-step h3 {
-            color: #667eea;
+            color: #0f9b0f;
             font-size: 1.8em;
             margin-bottom: 10px;
         }
 
         .workflow-step p {
-            color: #666;
+            color: #555;
             font-size: 1.1em;
         }
 
@@ -354,12 +365,12 @@
         }
 
         .comparison-card.batch {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            background: linear-gradient(135deg, #81c784 0%, #66bb6a 100%);
             color: white;
         }
 
         .comparison-card.streaming {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            background: linear-gradient(135deg, #4fc3f7 0%, #29b6f6 100%);
             color: white;
         }
 
@@ -399,11 +410,40 @@
 
         .badge {
             display: inline-block;
-            background: rgba(255,255,255,0.2);
-            padding: 5px 15px;
-            border-radius: 20px;
+            background: rgba(255,255,255,0.25);
+            padding: 8px 20px;
+            border-radius: 25px;
             font-size: 0.9em;
             margin: 5px;
+            border: 1px solid rgba(255,255,255,0.4);
+            transition: all 0.3s ease;
+        }
+
+        .badge:hover {
+            background: white;
+            color: #0f9b0f;
+            transform: scale(1.05);
+        }
+
+        .success-box {
+            background: linear-gradient(135deg, #c8e6c9, #a5d6a7);
+            padding: 30px;
+            border-radius: 20px;
+            border-left: 5px solid #2e7d32;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            color: #1b5e20;
+        }
+
+        .success-box strong {
+            font-size: 1.3em;
+            color: #1b5e20;
+        }
+
+        .success-box p {
+            font-size: 1.1em;
+            margin-top: 10px;
+            line-height: 1.8;
         }
 
         @media (max-width: 768px) {
@@ -453,7 +493,7 @@
                 </ul>
             </div>
 
-            <h3 style="font-size: 1.8em; margin: 40px 0 20px 0; color: #667eea;">📋 Estructura del Dataset</h3>
+            <h3 style="font-size: 1.8em; margin: 40px 0 20px 0; color: #0f9b0f;">📋 Estructura del Dataset</h3>
             
             <table class="data-table">
                 <thead>
@@ -478,7 +518,7 @@
                 </tbody>
             </table>
 
-            <p style="text-align: center; font-size: 1.1em; color: #667eea; font-weight: bold; margin-top: 20px;">
+            <p style="text-align: center; font-size: 1.1em; color: #0f9b0f; font-weight: bold; margin-top: 20px;">
                 📊 Total de registros: 1000 clics simulados
             </p>
         </div>
@@ -489,7 +529,7 @@
                 Implementación con Spark
             </h2>
 
-            <h3 style="font-size: 1.8em; margin: 30px 0 20px 0; color: #667eea;">1️⃣ Configuración del Entorno</h3>
+            <h3 style="font-size: 1.8em; margin: 30px 0 20px 0; color: #0f9b0f;">1️⃣ Configuración del Entorno</h3>
             <p style="font-size: 1.1em; margin-bottom: 20px;">
                 Se instaló <strong>Apache Spark 3.5.0</strong> en Google Colab y se configuró el entorno de ejecución.
             </p>
@@ -503,7 +543,7 @@ spark = SparkSession.builder.<span class="function">appName</span>(<span class="
                 </code>
             </div>
 
-            <h3 style="font-size: 1.8em; margin: 40px 0 20px 0; color: #667eea;">2️⃣ Carga y Exploración de Datos</h3>
+            <h3 style="font-size: 1.8em; margin: 40px 0 20px 0; color: #0f9b0f;">2️⃣ Carga y Exploración de Datos</h3>
 
             <div class="code-block">
                 <code>
@@ -512,11 +552,11 @@ df.<span class="function">show</span>(<span class="string">5</span>)
                 </code>
             </div>
 
-            <div style="background: linear-gradient(135deg, #e8f5e9, #c8e6c9); padding: 25px; border-radius: 15px; margin: 25px 0; border-left: 5px solid #4caf50;">
+            <div style="background: linear-gradient(135deg, #e8f5e9, #c8e6c9); padding: 25px; border-radius: 15px; margin: 25px 0; border-left: 5px solid #2e7d32; color: #1b5e20;">
                 <strong style="font-size: 1.2em;">✅ Ventaja:</strong> Spark permite procesar datasets que no cabrían en memoria usando un solo equipo.
             </div>
 
-            <h3 style="font-size: 1.8em; margin: 40px 0 20px 0; color: #667eea;">3️⃣ Procesamiento del Flujo</h3>
+            <h3 style="font-size: 1.8em; margin: 40px 0 20px 0; color: #0f9b0f;">3️⃣ Procesamiento del Flujo</h3>
 
             <div class="code-block">
                 <code>
@@ -537,8 +577,8 @@ clicks_per_user.<span class="function">show</span>()
             <div class="info-cards">
                 <div class="info-card active">
                     <h3>👥 Usuarios Activos</h3>
-                    <p>Algunos usuarios presentan <strong>clics significativamente mayores</strong>, indicando:</p>
-                    <ul style="margin-top: 15px; line-height: 1.8;">
+                    <p style="color: #555;">Algunos usuarios presentan <strong>clics significativamente mayores</strong>, indicando:</p>
+                    <ul style="margin-top: 15px; line-height: 1.8; color: #555;">
                         <li>• Mayor interacción con productos</li>
                         <li>• Usuarios recurrentes o fieles</li>
                         <li>• Oportunidad para marketing personalizado</li>
@@ -546,9 +586,9 @@ clicks_per_user.<span class="function">show</span>()
                 </div>
 
                 <div class="info-card passive">
-                    <h3>🎯 Usuarios Pasivos</h3>
-                    <p>Los usuarios con <strong>poca actividad</strong> representan:</p>
-                    <ul style="margin-top: 15px; line-height: 1.8;">
+                    <h3 style="color: #1976d2;">🎯 Usuarios Pasivos</h3>
+                    <p style="color: #555;">Los usuarios con <strong>poca actividad</strong> representan:</p>
+                    <ul style="margin-top: 15px; line-height: 1.8; color: #555;">
                         <li>• Visitantes ocasionales</li>
                         <li>• Clientes potenciales</li>
                         <li>• Necesidad de incentivos para conversión</li>
@@ -609,9 +649,9 @@ clicks_per_user.<span class="function">show</span>()
                 </div>
             </div>
 
-            <div style="background: linear-gradient(135deg, #d4edda, #b8dabd); padding: 30px; border-radius: 20px; border-left: 5px solid #28a745; margin: 30px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-                <strong style="font-size: 1.3em;">✨ Insight 2025:</strong>
-                <p style="font-size: 1.1em; margin-top: 10px; line-height: 1.8;">
+            <div class="success-box">
+                <strong>✨ Insight 2025:</strong>
+                <p>
                     El streaming permite detectar comportamientos instantáneos, esencial para empresas que buscan reaccionar de forma ágil ante sus clientes.
                 </p>
             </div>
