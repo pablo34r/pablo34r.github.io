@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Análisis de Flujo de Datos con Spark</title>
+    <title style="color:black">Análisis de Flujo de Datos con Spark</title>
     <style>
         * {
             margin: 0;
@@ -494,8 +494,8 @@
 <body>
     <header>
         <div class="particles" id="particles"></div>
-        <h1>📊 Análisis de Flujo de Datos</h1>
-        <h2>Hecho por: Pablo Roncancio</h2>
+        <h1 style="color:black">📊 Análisis de Flujo de Datos</h1>
+        <h2 style="color:black">Hecho por: Pablo Roncancio</h2>
         <div style="margin-top: 20px;">
             <span class="badge">Apache Spark</span>
             <span class="badge">Python</span>
@@ -521,7 +521,7 @@
             </h2>
             
             <div class="highlight-box">
-                <h3>Imaginemos una tienda online que desea analizar en tiempo real los clics de los usuarios</h3>
+                <h3 style="color:white">Imaginemos una tienda online que desea analizar en tiempo real los clics de los usuarios</h3>
                 <ul>
                     <li>Detectar patrones de navegación</li>
                     <li>Medir el nivel de interés de los clientes</li>
