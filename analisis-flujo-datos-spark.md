@@ -4,8 +4,8 @@ layout: default
 ---
 
 <div style="text-align: center; margin: 40px 0;">
-  <h1 style="font-size: 2.5em; color: #2c3e50; margin-bottom: 10px;">📊 Análisis de Flujo de Datos Simulado</h1>
-  <h2 style="font-size: 1.5em; color: #7f8c8d; font-weight: 300;">con Apache Spark y Jekyll</h2>
+  <h1 style="font-size: 2.5em; color: #2c3e50; margin-bottom: 10px;">📊 Hecho por: Pablo Roncancio</h1>
+  <h2 style="font-size: 1.5em; color: #7f8c8d; font-weight: 300;">En Apache Spark y Jekyll</h2>
   <hr style="width: 60%; margin: 30px auto; border: 2px solid #3498db;">
 </div>
 
