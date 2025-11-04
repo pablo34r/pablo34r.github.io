@@ -620,9 +620,9 @@ clicks_per_user.<span class="function">show</span>()
                 </div>
             </div>
         </div>
-        
-![Gráfico de clics](grafico-clics.png)
-
+    <div>    
+    ![Gráfico de clics](/grafico-clics.png)
+    </div>
 
         <div class="content-section">
             <h2 class="section-title">
